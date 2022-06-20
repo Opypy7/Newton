@@ -4,3 +4,4 @@ cd .\build\windows
 # cpack
 #cmake --build . --config Release
 cpack -C Release
+cd ../..
