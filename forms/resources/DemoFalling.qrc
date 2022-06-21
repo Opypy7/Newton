@@ -1,4 +1,5 @@
 <RCC>
-    <qresource prefix="FallingObjectsDemo">
+    <qresource prefix="/Icons">
+        <file>IconNewton.ico</file>
     </qresource>
 </RCC>

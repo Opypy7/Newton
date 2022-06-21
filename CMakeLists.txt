@@ -13,6 +13,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_PREFIX_PATH $ENV{QTDIR})
+set(CMAKE_AUTORCC ON)
 
 find_package(Qt6 COMPONENTS Core)
 find_package(Qt6 COMPONENTS Gui)
@@ -47,9 +48,15 @@ set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_AUTOUIC_SEARCH_PATHS} ${FORMS_DIR})
 
 # Add the executable
 if (WIN32) 
-    add_executable(Newton WIN32 ${SOURCES})
+    qt_add_executable(Newton WIN32
+    "${FORMS_DIR}/resources/DemoFalling.qrc"
+    ${SOURCES}
+    )
 elseif(UNIX)
-    add_executable(Newton ${SOURCES})
+    qt_add_executable(Newton 
+    "${FORMS_DIR}/resources/DemoFalling.qrc"
+    ${SOURCES}
+    )
 endif()
 
 # Add the target includes for Newton
@@ -58,7 +65,6 @@ target_include_directories(Newton PRIVATE ${INCLUDE_DIR})
 target_include_directories(Newton PRIVATE ${SOURCE_DIR})
 
 #===================== LINKING LIBRARIES =======================#
-
 
 target_link_libraries(Newton PUBLIC
     Qt6::Core

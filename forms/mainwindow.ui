@@ -6,19 +6,140 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>547</width>
-    <height>397</height>
+    <width>621</width>
+    <height>585</height>
    </rect>
   </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Highlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>85</red>
+        <green>255</green>
+        <blue>127</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Link">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>170</red>
+        <green>170</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="LinkVisited">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>85</green>
+        <blue>127</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Highlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>240</red>
+        <green>240</green>
+        <blue>240</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Link">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="LinkVisited">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Highlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>120</green>
+        <blue>215</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Link">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="LinkVisited">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Newton</string>
   </property>
   <property name="windowIcon">
-   <iconset>
-    <normaloff>../../../../Downloads/ikon.bmp</normaloff>../../../../Downloads/ikon.bmp</iconset>
+   <iconset resource="resources/DemoFalling.qrc">
+    <normaloff>:/Icons/IconNewton.ico</normaloff>:/Icons/IconNewton.ico</iconset>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Icons/IconNewton.ico&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonFollowStyle</enum>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QVBoxLayout" name="verticalLayout_8">
+   <layout class="QVBoxLayout" name="_2">
+    <property name="spacing">
+     <number>5</number>
+    </property>
+    <property name="leftMargin">
+     <number>5</number>
+    </property>
+    <property name="topMargin">
+     <number>5</number>
+    </property>
+    <property name="rightMargin">
+     <number>5</number>
+    </property>
+    <property name="bottomMargin">
+     <number>5</number>
+    </property>
     <item>
      <widget class="QGroupBox" name="groupBox_10">
       <property name="title">
@@ -198,7 +319,7 @@
                 <item>
                  <widget class="QDoubleSpinBox" name="velocitySpinBox"/>
                 </item>
-                <item>
+                <item alignment="Qt::AlignHCenter">
                  <widget class="QSlider" name="velocitySlider">
                   <property name="sliderPosition">
                    <number>50</number>
@@ -235,7 +356,7 @@
                 <item>
                  <widget class="QDoubleSpinBox" name="velocitySpinBox_2"/>
                 </item>
-                <item>
+                <item alignment="Qt::AlignHCenter">
                  <widget class="QSlider" name="velocitySlider_2">
                   <property name="sliderPosition">
                    <number>50</number>
@@ -272,7 +393,7 @@
                 <item>
                  <widget class="QDoubleSpinBox" name="velocitySpinBox_3"/>
                 </item>
-                <item>
+                <item alignment="Qt::AlignHCenter">
                  <widget class="QSlider" name="velocitySlider_3">
                   <property name="value">
                    <number>0</number>
@@ -312,7 +433,7 @@
                 <item>
                  <widget class="QDoubleSpinBox" name="velocitySpinBox_5"/>
                 </item>
-                <item>
+                <item alignment="Qt::AlignHCenter">
                  <widget class="QSlider" name="velocitySlider_5">
                   <property name="sliderPosition">
                    <number>50</number>
@@ -349,7 +470,7 @@
                 <item>
                  <widget class="QDoubleSpinBox" name="velocitySpinBox_6"/>
                 </item>
-                <item>
+                <item alignment="Qt::AlignHCenter">
                  <widget class="QSlider" name="velocitySlider_6">
                   <property name="sliderPosition">
                    <number>50</number>
@@ -425,7 +546,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>547</width>
+     <width>621</width>
      <height>22</height>
     </rect>
    </property>
@@ -516,7 +637,7 @@
      <locale language="English" country="UnitedStates"/>
     </property>
     <property name="title">
-     <string>help</string>
+     <string>Help</string>
     </property>
    </widget>
    <addaction name="menuFile"/>
@@ -524,6 +645,15 @@
    <addaction name="menuhelp"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::NoToolBarArea</set>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
    </attribute>
