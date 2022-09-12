@@ -12,17 +12,47 @@
   </property>
   <property name="palette">
    <palette>
-    <active/>
-    <inactive/>
-    <disabled/>
+    <active>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>120</red>
+        <green>120</green>
+        <blue>120</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
    </palette>
   </property>
   <property name="windowTitle">
    <string>Newton</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="resources/DemoFalling.qrc">
-    <normaloff>:/Icons/IconNewton.ico</normaloff>:/Icons/IconNewton.ico</iconset>
+   <iconset resource="../resources/Newton.qrc">
+    <normaloff>:/Icons/apple.ico</normaloff>:/Icons/apple.ico</iconset>
   </property>
   <property name="toolTip">
    <string/>
@@ -31,7 +61,7 @@
    <bool>false</bool>
   </property>
   <property name="styleSheet">
-   <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Icons/IconNewton.ico&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Icons/apple.ico&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
   </property>
   <property name="locale">
    <locale language="English" country="UnitedStates"/>
@@ -605,7 +635,7 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="resources/DemoFalling.qrc"/>
+  <include location="../resources/Newton.qrc"/>
  </resources>
  <connections/>
 </ui>
